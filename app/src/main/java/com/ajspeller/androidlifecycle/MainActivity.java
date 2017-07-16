@@ -50,4 +50,10 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d(tag, "In the onDestroy() event");
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d(tag, "In the onSaveInstanceState() event");
+    }
 }
